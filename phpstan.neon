@@ -1,0 +1,14 @@
+includes:
+	- phpstan-core.neon
+	- phpstan-baseline.neon
+
+parameters:
+    treatPhpDocTypesAsCertain: false
+    level: 8
+    phpVersion: 80200
+    paths:
+        - definitions
+        - src
+    excludePaths:
+        analyse:
+            - vendor

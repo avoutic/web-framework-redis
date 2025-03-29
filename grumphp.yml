@@ -1,0 +1,20 @@
+grumphp:
+    fixer:
+        fix_by_default: true
+    tasks:
+        git_blacklist:
+            keywords:
+                - "var_dump"
+        git_commit_message:
+            max_body_width: 80
+            max_subject_width: 80
+        phpcsfixer:
+            config: .php-cs-fixer.dist.php
+        phpcsfixer_copyright:
+            config: .php-cs-fixer.copyright.php
+            metadata:
+              task: phpcsfixer
+        phpstan:
+            configuration: phpstan.neon
+            memory_limit: 256M
+            use_grumphp_paths: false
