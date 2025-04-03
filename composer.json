@@ -1,6 +1,6 @@
 {
     "name": "avoutic/web-framework-redis",
-    "description": "The Redis module for web-framework",
+    "description": "Redis module for web-framework",
     "type": "library",
     "homepage": "https://web-framework.com",
     "license": "MIT",
@@ -13,7 +13,7 @@
     "require": {
         "cache/redis-adapter": "^1.1",
         "ext-redis": "*",
-        "avoutic/web-framework": "^8"
+        "avoutic/web-framework": "^9"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.0"
