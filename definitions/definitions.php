@@ -14,15 +14,29 @@ return [
 
         $redisClient = new \Redis();
 
-        $result = $redisClient->pconnect(
-            $cacheConfig['hostname'],
-            $cacheConfig['port'],
-            1,
-            'wf',
-            0,
-            0,
-            ['auth' => $cacheConfig['password']]
-        );
+        if (!isset($cacheConfig['password']) || !strlen($cacheConfig['password']))
+        {
+            $result = $redisClient->pconnect(
+                $cacheConfig['hostname'],
+                $cacheConfig['port'],
+                1,
+                'wf',
+                0,
+                0,
+            );
+        }
+        else
+        {
+            $result = $redisClient->pconnect(
+                $cacheConfig['hostname'],
+                $cacheConfig['port'],
+                1,
+                'wf',
+                0,
+                0,
+                ['auth' => $cacheConfig['password']]
+            );
+        }
 
         if ($result !== true)
         {
