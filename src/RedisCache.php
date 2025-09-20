@@ -12,8 +12,8 @@
 namespace WebFramework\Redis;
 
 use Cache\Adapter\Redis\RedisCachePool;
-use WebFramework\Core\Cache;
-use WebFramework\Core\Instrumentation;
+use WebFramework\Cache\Cache;
+use WebFramework\Diagnostics\Instrumentation;
 
 /**
  * Class RedisCache.

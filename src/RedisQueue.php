@@ -12,7 +12,7 @@
 namespace WebFramework\Redis;
 
 use Carbon\Carbon;
-use WebFramework\Core\Instrumentation;
+use WebFramework\Diagnostics\Instrumentation;
 use WebFramework\Queue\Job;
 use WebFramework\Queue\Queue;
 

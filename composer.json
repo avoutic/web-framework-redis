@@ -13,7 +13,7 @@
     "require": {
         "cache/redis-adapter": "^1.1",
         "ext-redis": "*",
-        "avoutic/web-framework": "^9"
+        "avoutic/web-framework": "^10"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.0"
